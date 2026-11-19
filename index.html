@@ -32,15 +32,13 @@
       <h2>Global Aerosol Map</h2>
 
       <div class="buttons">
-        <button>All aerosols</button>
-        <button>Dust</button>
-        <button>Wildfire smoke</button>
-        <button>Pollution</button>
+        <button data-source="all">All aerosols</button>
+        <button data-source="dust">Dust</button>
+        <button data-source="wildfire">Wildfire smoke</button>
+        <button data-source="pollution">Pollution</button>
       </div>
 
-      <div id="map">
-        <p>Map visualization goes here</p>
-      </div>
+      <div id="map"></div>
 
       <div class="legend">
         <span>Low AOD</span>
@@ -49,7 +47,9 @@
       </div>
 
       <div class="slider">
-        <label for="year">Year: <span id="year-value">2020</span></label>
+        <label for="year">
+          Year: <span id="year-value">2020</span>
+        </label>
 
         <input
           type="range"
