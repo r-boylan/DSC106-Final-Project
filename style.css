@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  section {
+    margin-top: 40px;
+  }
+  
+  .intro {
+    max-width: 700px;
+  }
+  
+  .buttons {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  #map {
+    height: 400px;
+    background-color: #e3e8ec;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  #map p {
+    color: #666;
+  }
+  
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .legend-color {
+    width: 150px;
+    height: 15px;
+    background: linear-gradient(
+      to right,
+      yellow,
+      orange,
+      red
+    );
+  }
+  
+  .slider {
+    margin-top: 25px;
+  }
+  
+  #year {
+    width: 100%;
+  }
+  
+  #chart {
+    height: 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sources {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .sources div {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  @media (max-width: 700px) {
+    body {
+      margin: 20px;
+    }
+  
+    .sources {
+      flex-direction: column;
+    }
+  }
+  

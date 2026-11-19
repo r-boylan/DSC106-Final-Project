@@ -1,11 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Global Aerosol Trends</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
+
 <body>
-    
+
+  <header>
+    <h1>Analyzing Global Aerosol Trends</h1>
+    <p>A.I.R. Team</p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>About our project</h2>
+      <p>
+        Aerosols are particles in the atmosphere that come from
+        sources like dust, wildfires, and pollution. We want to
+        explore how aerosol concentrations have changed around
+        the world over time.
+      </p>
+    </section>
+
+    <section class="visualization">
+
+      <h2>Global Aerosol Map</h2>
+
+      <div class="buttons">
+        <button>All aerosols</button>
+        <button>Dust</button>
+        <button>Wildfire smoke</button>
+        <button>Pollution</button>
+      </div>
+
+      <div id="map">
+        <p>Map visualization goes here</p>
+      </div>
+
+      <div class="legend">
+        <span>Low AOD</span>
+        <div class="legend-color"></div>
+        <span>High AOD</span>
+      </div>
+
+      <div class="slider">
+        <label for="year">Year: <span id="year-value">2020</span></label>
+
+        <input
+          type="range"
+          min="2003"
+          max="2024"
+          value="2020"
+          id="year"
+        >
+      </div>
+
+    </section>
+
+    <section class="trends">
+
+      <h2>Regional Trends</h2>
+
+      <p>
+        Click a region on the map to explore its aerosol trends.
+      </p>
+
+      <div id="chart">
+        <p>Chart visualization goes here</p>
+      </div>
+
+    </section>
+
+    <section class="background">
+
+      <h2>What causes aerosols?</h2>
+
+      <div class="sources">
+
+        <div>
+          <h3>Dust</h3>
+          <p>
+            Dust from deserts can travel across continents
+            and affect air quality.
+          </p>
+        </div>
+
+        <div>
+          <h3>Wildfires</h3>
+          <p>
+            Wildfires release smoke and particles into
+            the atmosphere.
+          </p>
+        </div>
+
+        <div>
+          <h3>Pollution</h3>
+          <p>
+            Human activities can increase aerosol
+            concentrations in some regions.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
