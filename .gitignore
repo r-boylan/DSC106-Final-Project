@@ -1,0 +1,4 @@
+data/raw/
+data/aod_annual.csv
+.DS_Store
+__pycache__/
